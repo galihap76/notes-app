@@ -9,6 +9,7 @@ Notes app adalah sebuah aplikasi web yang di gunakan untuk menulis catatan apapu
 - Codeigniter
 - Mysql
 
+> Noted : Template login saya ambil dari internet.
 
 ## Screenshots 📸
 
