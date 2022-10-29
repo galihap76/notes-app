@@ -169,8 +169,16 @@ class Auth extends CI_Controller {
 		$name_cookie = 'auth';
 		$domain = '';
 		$path = '/';
-
+		
 		delete_cookie($name_cookie, $domain, $path);
-		redirect('auth');
+		redirect(base_url() . 'auth/logout_message', 'refresh');
+		
+	}
+
+	// pesan log out
+	public function logout_message() {
+		$this->session->set_flashdata('pesan logout', '<div class="alert alert-success text-center" role="alert">
+				Anda berhasil logout!</div>');
+		redirect(base_url(), 'refresh');
 	}
 }
