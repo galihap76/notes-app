@@ -26,7 +26,7 @@
 		      	<h3 class="text-center mb-4">Sign In</h3>
 
 				  <!-- FORM LOGIN -->
-				 <form action="<?php echo base_url('auth'); ?>" class="login-form" method="post">
+				 <form action="" class="login-form" method="post">
 
 				 <!-- Pesan dalam login-->
 					<?php
@@ -46,6 +46,10 @@
 					// untuk beri pesan jika password berhasil di perbarui
 					}else if ($this->session->flashdata('password baru')) {
 							echo $this->session->flashdata('password baru');
+
+					// untuk beri pesan jika user berhasil logout
+					}else if ($this->session->flashdata('pesan logout')) {
+						echo $this->session->flashdata('pesan logout');
 
 					}
 					?>

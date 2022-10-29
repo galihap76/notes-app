@@ -26,7 +26,7 @@
 		      	<h3 class="text-center mb-4">Lupa password</h3>
 
 				  <!-- FORM LUPA PASSWORD -->
-				 <form action="<?php echo base_url('auth/lupa_password'); ?>" class="login-form" method="post">
+				 <form action="" class="login-form" method="post">
 
                  <!-- PESAN DALAM LUPA PASSWORD -->
 
