@@ -86,7 +86,7 @@ if(!$this->session->userdata("nama")){
                 // cek jika text area masing kosong
                 if(textArea.value == ''){
                         // beri pesan untuk tidak bisa di save
-                        swal("Oops!", "Tidak bisa di save karena text area kosong!", "error");
+                        swal("Oops!", "Tidak bisa di save karena text area masih kosong!", "error");
                 }else{
                         // misal terisi textarea nya maka akan melakukan pengunduhan file pada textarea
                         let a = document.createElement("a");
