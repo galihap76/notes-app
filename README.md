@@ -1,6 +1,6 @@
 ## Notes app
 
-Notes app adalah sebuah aplikasi web yang di gunakan untuk menulis catatan apapun dan bisa di save berbentuk file txt. Saya membuat ini hanya sekedar projek pribadi dan sebagai dokumentasi pribadi.
+Notes app adalah sebuah aplikasi web sederhana yang di gunakan untuk menulis catatan apapun dan bisa di save berbentuk file txt. Saya membuat ini hanya sekedar projek pribadi dan sebagai dokumentasi pribadi.
 
 ## Tech stacks
 - Html
