@@ -11,6 +11,7 @@
 
 	
 	<link rel="stylesheet" href="<?php echo base_url('assets/css/style.css')?>">
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 	</head>
 
@@ -33,7 +34,10 @@
 					 <?php
 					 // untuk beri pesan jika username sudah ter daftar
 					if ($this->session->flashdata('pesan terdaftar')) {
-							echo $this->session->flashdata('pesan terdaftar');
+							echo "<script>
+						swal('Warning', 'Maaf username sudah terdaftar.', 'warning')
+						</script>
+						";
 
 					}
 					?>

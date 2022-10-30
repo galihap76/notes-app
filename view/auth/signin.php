@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	
 	<link rel="stylesheet" href="<?php echo base_url('assets/css/style.css')?>">
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 	</head>
 
@@ -33,23 +34,38 @@
 
 					// untuk beri pesan jika username tidak valid
 					if ($this->session->flashdata('username tidak valid')) {
-							echo $this->session->flashdata('username tidak valid');
+						echo "<script>
+						swal('Oops', 'Di mohon signup jika belum mempunyai username.', 'error')
+						</script>
+						";
 
 					// untuk beri pesan jika password tidak valid
 					}else if($this->session->flashdata('password tidak valid')){
-							echo $this->session->flashdata('password tidak valid');
+						echo "<script>
+						swal('Error', 'Password tidak valid.', 'error')
+						</script>
+						";
 
 					// untuk beri pesan jika user berhasil sign up
 					}else if ($this->session->flashdata('pesan sukses')) {
-							echo $this->session->flashdata('pesan sukses');
+						echo "<script>
+						swal('Success', 'Berhasil sign up dan harap sign in terlebih dahulu.', 'success')
+						</script>
+						";
 
 					// untuk beri pesan jika password berhasil di perbarui
 					}else if ($this->session->flashdata('password baru')) {
-							echo $this->session->flashdata('password baru');
+						echo "<script>
+						swal('Success', 'Password berhasil di ubah.', 'success')
+						</script>
+						";
 
 					// untuk beri pesan jika user berhasil logout
 					}else if ($this->session->flashdata('pesan logout')) {
-						echo $this->session->flashdata('pesan logout');
+						echo "<script>
+						swal('Success', 'Anda berhasil log out.', 'success')
+						</script>
+						";
 
 					}
 					?>

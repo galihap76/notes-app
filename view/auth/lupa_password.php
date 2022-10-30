@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	
 	<link rel="stylesheet" href="<?php echo base_url('assets/css/style.css')?>">
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 	</head>
 
@@ -33,7 +34,10 @@
                  <?php
 					 // untuk beri pesan jika password gagal
 					if($this->session->flashdata('password gagal')){
-						echo $this->session->flashdata('password gagal');
+						echo "<script>
+						swal('Error', 'Password gagal di ubah.', 'error')
+						</script>
+						";
 
 					}
                  ?>
