@@ -6,6 +6,7 @@ Notes app adalah sebuah aplikasi web yang di gunakan untuk menulis catatan apapu
 - Html
 - Bootstrap
 - Javascript
+- Sweetalert
 - Codeigniter
 - Mysql
 
